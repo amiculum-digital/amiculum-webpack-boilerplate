@@ -110,6 +110,11 @@ module.exports = {
       filename: 'about-us.html',
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      template: './src/html/html.pug',
+      filename: 'html.html',
+      inject: true
+    }),
     /** */
     new HtmlWebpackPlugin({
       title: 'tris-404-page',
