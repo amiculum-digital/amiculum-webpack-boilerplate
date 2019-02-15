@@ -14,10 +14,12 @@ module.exports = {
         test: /\.txt$/,
         use: 'raw-loader'
       },
+      /** Added pug-loader **/
       {
         test: /\.pug$/,
         use: 'pug-loader',
       },
+      /** */
       {
         test: /\.html$/,
         use: [{
@@ -87,6 +89,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    /** Plugin change for pug files */
     new HtmlWebpackPlugin({
       template: './src/html/index.pug',
       filename: 'index.html',
@@ -97,6 +100,7 @@ module.exports = {
       filename: 'about-us.html',
       inject: true
     }),
+    /** */
     new HtmlWebpackPlugin({
       title: 'tris-404-page',
       filename: '404.html',
