@@ -1,8 +1,8 @@
 {
-  "name": "tris-webpack-boilerplate",
+  "name": "amiculum-digital-boilerplate",
   "version": "1.0.0",
   "description": "A webpack boilerplate for static websites that has all the necessary modern tools and optimizations built-in.",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tr1s/tris-webpack-boilerplate"
+    "url": "https://github.com/amiculum-digital/amiculum-webpack-boilerplate"
   },
   "keywords": [],
   "author": "tr1s",
