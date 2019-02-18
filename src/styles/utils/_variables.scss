@@ -1,6 +1,24 @@
-//? set your brand colors
+/* COLOURS - http://chir.ag/projects/name-that-color/
+------------------------------------------ */
+$col-black: #000000;
+$col-white: #ffffff;
 
-$white: #fff;
+$col-mine-shaft: #333333;
+$col-red-damask: #d8544b;
+$col-sunglo: #e2766f;
+
+$col-orange: #ff9100;
+
+$light-grey: #fafafa;
+$grey: #d7d7d7;
+
+$black-ish: #444444;
+
+$blue: #2c638f;
+$pink: #fff0f5;
+$yellow: #fffacd;
+
+//? set your brand colors
 
 $light-grey: #fafafa;
 $grey: #d7d7d7;
@@ -12,8 +30,43 @@ $blue: #2c638f;
 $pink: #fff0f5;
 $yellow: #fffacd;
 
-//? override for project clarity
+/* OVERRIDE FOR PROJECT CLARITY
+------------------------------------------ */
+$col-selection: $col-orange;
 
 $color-primary: $blue;
 $color-secondary: $pink;
 $color-tertiary: $yellow;
+
+$col-standard: $col-mine-shaft;
+$col-link: $col-red-damask;
+$col-link-hover: $col-sunglo;
+
+
+/* WEIGHTS
+------------------------------------------ */
+$weight-light: 100;
+$weight-regular: 400;
+$weight-bold: 600;
+
+/* FALLBACK FONT
+------------------------------------------ */
+$fallback: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+
+/* BASE FONTS
+------------------------------------------ */
+$base-font-family: $fallback;
+$base-font-weight: $weight-regular;
+$base-font-size: 1em;
+$base-line-height: 1.4;
+
+
+/* CUSTOM/IMPORTED FONTS FROM ./base/_typography.scss
+------------------------------------------ */
+$font-heading: 'Libre-Baskerville-Reg', $fallback;
+
+
+/* HEADER FONTS
+------------------------------------------ */
+$header-font-family: $font-heading;
