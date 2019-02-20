@@ -10,8 +10,9 @@ module.exports = {
     }),
     purgecss({
       content: [
-        './**/*.html',
-        './**/*.pug'
+        './src/*.html',
+        './src/html/*.pug',
+        './src/html/layout/*.pug'
       ],
       keyframes: true,
     })
