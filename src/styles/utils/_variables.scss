@@ -1,5 +1,9 @@
 /* COLOURS - http://chir.ag/projects/name-that-color/
 ------------------------------------------ */
+
+/** gav comments
+ * Tailwind has these colors
+ */
 $col-black: #000000;
 $col-white: #ffffff;
 
@@ -19,6 +23,13 @@ $pink: #fff0f5;
 $yellow: #fffacd;
 
 //? set your brand colors
+
+/** gav comments
+ * Maybe we can keep these but you can also define in
+ * https://github.com/amiculum-digital/amiculum-webpack-boilerplate/blob/Tailwind_Framework/src/styles/utils/_tailwind.scss
+ * both methods are fine
+ * Guide: https://tailwindcss.com/docs/adding-new-utilities
+ */
 
 $light-grey: #fafafa;
 $grey: #d7d7d7;
@@ -45,6 +56,10 @@ $col-link-hover: $col-sunglo;
 
 /* WEIGHTS
 ------------------------------------------ */
+
+/** gav comments
+ * Tailwind has these
+ */
 $weight-light: 100;
 $weight-regular: 400;
 $weight-bold: 600;
@@ -56,6 +71,11 @@ $fallback: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 /* BASE FONTS
 ------------------------------------------ */
+
+/** gav comments
+ * Tailwind doesn't have a set of base fonts
+ * there is a repeat of these fonts in _typography.scss @ comment //! set font variables
+ */
 $base-font-family: $fallback;
 $base-font-weight: $weight-regular;
 $base-font-size: 1em;
@@ -64,9 +84,19 @@ $base-line-height: 1.4;
 
 /* CUSTOM/IMPORTED FONTS FROM ./base/_typography.scss
 ------------------------------------------ */
+
+/** gav comments
+ * Tailwind doesn't have a set of base fonts
+ * there is a repeat of these fonts in _typography.scss @ comment //! set font variables
+ */
 $font-heading: 'Libre-Baskerville-Reg', $fallback;
 
 
 /* HEADER FONTS
 ------------------------------------------ */
+
+/** gav comments
+ * Tailwind doesn't have a set of base fonts
+ * there is a repeat of these fonts in _typography.scss @ comment //! set font variables
+ */
 $header-font-family: $font-heading;

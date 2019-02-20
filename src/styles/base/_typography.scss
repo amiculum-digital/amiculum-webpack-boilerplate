@@ -16,6 +16,9 @@
 }
 
 //! set font variables
+/** gav comments
+ * Checkout in _variables.scss
+ */
 $font-heading: 'Libre-Baskerville-Reg', Fallback, 'Georgia', serif;
 $font-body: sans-serif;
 
@@ -24,6 +27,9 @@ html {
   font-size: 62.5%; // 1rem = 10px, 3.5rem = 35px;
 }
 
+/** gav comments
+ * This is repeated in _global.scss
+ */
 body {
   font-family: $font-body;
   font-size: 1.6rem;

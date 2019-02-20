@@ -1,3 +1,6 @@
+/** gav comments
+ * This is found in _setup.scss
+ */
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
@@ -15,6 +18,9 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 
+/** gav comments
+ * This is repeated in _typography.scss
+ */
 body {
 	color: $col-standard;
 	font-family: $base-font-family;
@@ -98,6 +104,10 @@ ul {
  *    that are clearfixed.
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
+ */
+
+ /** gav comments
+ * This is found in _setup.scss .clearfix
  */
 .cf:before,
 .cf:after {

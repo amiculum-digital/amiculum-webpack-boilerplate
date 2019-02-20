@@ -1,4 +1,9 @@
 /* MEDIA QUERIES */
+
+/** gav comments
+ * Tailwind breakpoints @ https://tailwindcss.com/docs/responsive-design
+ * Please use min-width
+ */
 @mixin respond-to($breakpoint) {
   @if $breakpoint=="mobile" {
     @media (max-width: 480px) {
@@ -38,6 +43,10 @@
 /* BREAKPOINT
 ------------------------------------------ */
 
+/** gav comments
+ * Do we need these?
+ */
+
 @mixin breakpoint($point) {
 	@if $point == medium {
 		@media only screen and (min-width: 50em) { @content; }
@@ -62,6 +71,11 @@
 
 // Sass mixin for SVG with fallback support using the invisible gradient technique
 // http://pauginer.com/post/36614680636/invisible-gradient-technique
+
+/** gav comments
+ * https://caniuse.com/#search=svg
+ * SVG is widely suupported now.
+ */
 @mixin vector-image($img, $fallback, $position: center center, $size: auto) {
 	background: transparent url($fallback) $position no-repeat;
 	background-image: -webkit-linear-gradient(transparent, transparent), url($img);
