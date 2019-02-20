@@ -9,22 +9,5 @@
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "rules": {
-    "arrow-spacing": ["error", { "before": true, "after": true }],
-    "comma-dangle": ["error", {
-      "imports": "never",
-      "exports": "never",
-      "functions": "ignore"
-    }],
-    "curly": "error",
-    "indent": ["error", 2],
-    "keyword-spacing": ["error", { "before": true, "after": true }],
-    "no-console": "off",
-    "no-debugger": "off",
-    "object-curly-spacing": ["error", "always"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-    "space-before-blocks": ["error", "always"],
-    "space-before-function-paren": ["error", "never"]
-  }
+  "rules": {}
 }
