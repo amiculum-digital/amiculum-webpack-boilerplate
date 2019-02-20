@@ -9,6 +9,9 @@ const PreloadWebpackPlugin = require('preload-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  devServer: {
+    port: 8080
+  },
   module: {
     rules: [{
       test: /\.txt$/,
