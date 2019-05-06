@@ -105,27 +105,10 @@ module.exports = {
       filename: 'index.html',
       inject: true
     }),
-    new HtmlWebpackPlugin({
-      template: './src/html/about-us.pug',
-      filename: 'about-us.html',
-      inject: true
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/html/html.pug',
-      filename: 'html.html',
-      inject: true
-    }),
-    /** */
-    new HtmlWebpackPlugin({
-      title: 'tris-404-page',
-      filename: '404.html',
-      template: './src/404.html',
-      inject: 'head'
-    }),
     new PreloadWebpackPlugin({
       rel: 'preload',
       as(entry) {
-        if (/\.(woff|woff2|ttf|otf)$/.test(entry)) { return 'font'; }
+        if (/\.(woff|woff2|ttf|otf)$/.test(entry)) {return 'font';}
       },
       fileWhitelist: [/\.(woff|woff2|ttf|otf)$/],
       include: 'allAssets'
