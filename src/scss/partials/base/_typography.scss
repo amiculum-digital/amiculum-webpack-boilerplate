@@ -1,0 +1,153 @@
+/* FALLBACK FONT
+------------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+$fallback: "Lato", sans-serif, Arial, "Helvetica Neue", Helvetica;
+
+$base-font-family: $fallback;
+$header-font-family: $fallback;
+
+// Typesetting variables. Edit these!
+$baseFontSize: 16; // in pixels. This would result in 22px on desktop
+$baseLineHeight: 1.5; // how large the line height is as a multiple of font size
+$leading: $baseLineHeight * 1rem;
+$margin: $baseLineHeight * 0.5rem;
+
+// Rate of growth for headings
+$scale: 1.15;
+
+/* Setup */
+html {
+    /* Change default typefaces here */
+    font-family: $fallback;
+    font-size: $baseFontSize / 16 * 100%;
+
+    // Make everything look a little nicer in webkit
+    -webkit-font-smoothing: antialiased;
+
+    // -webkit-text-size-adjust: auto;
+    // -moz-text-size-adjust: auto;
+    // -ms-text-size-adjust: auto;
+    // -o-text-size-adjust: auto;
+    // text-size-adjust: auto;
+}
+
+/* Copy & Lists */
+p {
+    margin-top: $margin;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: $margin;
+    margin-bottom: $margin;
+
+    ul,
+    ol {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+blockquote {
+    line-height: $leading;
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Change heading typefaces here */
+    font-family: $fallback;
+    margin-top: $margin;
+    margin-bottom: 0;
+    line-height: $leading;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3 * $scale * 1rem;
+    line-height: 2 * $leading;
+    margin-top: 2 * $margin;
+}
+h2 {
+    font-size: 2 * $scale * 1rem;
+    line-height: 2 * $leading;
+    margin-top: 2 * $margin;
+}
+h3 {
+    font-size: 1 * $scale * 1rem;
+}
+h4 {
+    font-size: $scale / 1.15 * 1rem;
+}
+h5 {
+    font-size: $scale / 3 * 1rem;
+}
+h6 {
+    font-size: $scale / 4 * 1rem;
+}
+
+/* Tables */
+table {
+    margin-top: $margin;
+    border-spacing: 0px;
+    border-collapse: collapse;
+
+    td,
+    th {
+        padding: 0;
+        line-height: $baseLineHeight * $baseFontSize - 0px;
+    }
+}
+
+/* Code blocks */
+code {
+    // Forces text to constrain to the line-height. Not ideal, but works.
+    vertical-align: bottom;
+}
+
+/* Leading paragraph text */
+.lead {
+    font-size: $scale * 1rem;
+}
+
+/* Hug a the block above you */
+.hug {
+    margin-top: 0;
+}
+
+.text-xs {
+    line-height: $leading - 0.25rem;
+}
+
+.list-inside,
+.list-outside {
+    list-style: disc;
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.1s ease;
+    &:not(.no-hover):not(.btn):not(.pseudo-link):hover {
+        color: blue;
+    }
+}
+
+p a {
+    &:not(.no-hover):not(.btn):not(.pseudo-link) {
+        color: blue;
+        text-decoration: underline;
+    }
+}

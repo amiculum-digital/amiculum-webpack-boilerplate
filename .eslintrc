@@ -1,30 +1,75 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
-  },
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
-  "rules": {
-    "arrow-spacing": ["error", { "before": true, "after": true }],
-    "comma-dangle": ["error", {
-      "imports": "never",
-      "exports": "never",
-      "functions": "ignore"
-    }],
-    "curly": "error",
-    "indent": ["error", 2],
-    "keyword-spacing": ["error", { "before": true, "after": true }],
-    "no-console": "off",
-    "no-debugger": "off",
-    "object-curly-spacing": ["error", "always"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-    "space-before-blocks": ["error", "always"],
-    "space-before-function-paren": ["error", "never"]
-  }
+    "extends": [
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "jquery": true
+    },
+    "rules": {
+        "no-shadow": [
+            2,
+            {
+                "builtinGlobals": true,
+                "hoist": "functions",
+                "allow": []
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "function-paren-newline": [
+            "error",
+            "consistent"
+        ],
+        "indent": [
+            0,
+            4,
+            {
+                "SwitchCase": 4
+            }
+        ],
+        "no-tabs": 0,
+        "func-names": [
+            "error",
+            "as-needed"
+        ],
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "only-multiline",
+                "objects": "only-multiline",
+                "functions": "never"
+            }
+        ],
+        "prefer-destructuring": [
+            "error",
+            {
+                "array": true,
+                "object": false
+            },
+            {
+                "enforceForRenamedProperties": false
+            }
+        ]
+    }
 }
