@@ -1,0 +1,14 @@
+include layout/htmlStart
+
+- var pages = ['index'];
+
+main
+  .container
+    h1 Table of contents to the respective files.
+    ol.list-group(style="margin-left:30px;")
+      each page in pages
+        li
+          a(href=page+".html")
+            = page
+
+include layout/htmlEnd

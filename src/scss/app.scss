@@ -1,0 +1,27 @@
+@import "./modules/functions";
+@import "./modules/mixins";
+@import "./modules/variables";
+
+/* BASE PARTIALS
+------------------------------------------ */
+@tailwind base;
+@tailwind components;
+
+/*! purgecss start ignore */
+@import "../vendor/vendor";
+/*! purgecss end ignore */
+
+@import "./partials/base/base";
+@import "./partials/base/typography";
+
+/* COMPONENTS
+------------------------------------------ */
+
+
+//IE10+ Specific styles
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+}
+
+@tailwind utilities;
+

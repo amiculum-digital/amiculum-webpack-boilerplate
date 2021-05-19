@@ -1,0 +1,12 @@
+/*! purgecss start ignore */
+$fa-font-path: "../assets/fonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+
+
+$slick-font-path: "../assets/fonts";
+$slick-loader-path: "../assets/img/";
+@import 'slick-carousel/slick/slick.scss';
+@import 'slick-carousel/slick/slick-theme.scss';
+/*! purgecss end ignore */

@@ -1,5 +1,4 @@
-/node_modules
-/dist
-/.vscode
-/haters
-.DS_Store
+*.log
+*.lock
+node_modules
+.idea
