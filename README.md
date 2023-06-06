@@ -1,3 +1,12 @@
+# WARNING - ARCHIVED #
+
+## We moved away from this one as it was a pull from a public repo which we stopped managing etc. And we went over to the Yeo for more internal updates and uses.   
+Please use this repo instead: https://github.com/amiculum-digital/Amiculum-YEO-Boilerplate
+
+OR download the package for better custoim elements : https://www.npmjs.com/package/generator-yeo
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 # Webpack boilerplate with SASS(SCSS), HTML modules, Babel
 ## Features
 * Easy to start `yarn install` + `yarn start` (`npm install` + `npm start`)
